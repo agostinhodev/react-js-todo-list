@@ -22,7 +22,7 @@ export const TodoDiv = styled.div`
 	border-radius: 10px;
 	margin-left: 30px;
 	margin-right: 30px;
-	height: 50vh;
+	height: 90vh;
 	padding: 10px;
 	background-color: white;
 `
@@ -67,10 +67,58 @@ export const TodoFormButtonSubmit = styled.button`
 	margin-top: 15px;
 	background-color: #563d7c;
 	border: none;
+	cursor: pointer;
 `
 
-export const TodoFormButtonSubmitText = styled.span`
+export const TextWhite = styled.span`
 	font-size: 16px;
 	color: white;
 	font-weight: bold;
+`
+
+export const TodosList = styled.div`
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	width: 80vh;
+	overflow: auto;
+	overflow-y: scroll;
+	padding: 15px;
+`
+
+export const TodoItem = styled.div`
+	height: 25vh;
+	min-height: 25vh;
+	max-height: 25vh;
+	margin-top: 10px;
+	border-radius: 8px;
+	background-color: #dcdcdc;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 15px;
+`
+
+export const TodoItemView = styled.p`
+	flex-direction: row;
+	margin: 10px;
+`
+
+export const TodoItemDescription = styled.label`
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-weight: 400;
+`
+
+export const TodoItemText = styled.span`
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-weight: bold;
+`
+
+export const RemoveTodoButton = styled.button`
+	padding: 15px;
+	position: inherit;
+	margin-top: 15px;
+	background-color: #c93838;
+	border: none;
+	cursor: pointer;
 `
